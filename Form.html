@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PUP OSS Form - Application for New or Replacement of ID</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <div class="title-container">
+        <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+        <h2>OFFICE OF THE STUDENT SERVICES</h2>
+    </div>
+
+    <section id="form">
+        <div class="form-container">
+       
+            <h3>APPLICATION FOR NEW / REPLACEMENT OF IDENTIFICATION CARD</h3>
+
+            <form 
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbwRJj0JvqfpFKzx5SfNX8nVXQh2AtwOwClNIZKJi5TXuQuPOX16WnB17iB7hY7IlPo2Dw/exec">
+            
+            <div class="application-radio-group">
+                <div class="column">
+                    <input type="radio" id="transferee" name="application_type" value="Transferee" required>
+                    <label for="transferee">Transferee</label>
+
+                    <input type="radio" id="shiftee" name="application_type" value="Shiftee" required>
+                    <label for="shiftee">Shiftee</label>
+
+                    <input type="radio" id="lhs" name="application_type" value="LHS" required>
+                    <label for="lhs">LHS</label>
+
+                    <input type="radio" id="shs" name="application_type" value="SHS" required>
+                    <label for="shs">SHS</label>
+                </div>
+
+                <div class="column">
+
+                    <input type="radio" id="graduate_school" name="application_type" value="Graduate School" required>
+                    <label for="graduate_school">Graduate School</label>
+                    
+                    <input type="radio" id="late_filling" name="application_type" value="Late Filling" required>
+                    <label for="late_filling">Late Filling</label>
+
+                    <input type="radio" id="damaged" name="application_type" value="Damaged" required>
+                    <label for="damaged">Damaged</label>                
+               
+                    <input type="radio" id="undergrad" name="application_type" value="Undergrad" required>
+                    <label for="undergrad">Undergrad</label>
+
+
+                </div>
+
+                <div class="column">
+                    
+                
+                    <input type="radio" id="open_university" name="application_type" value="Open University" required>
+                    <label for="open_university">Open University</label>
+
+                    <input type="radio" id="old_id" name="application_type" value="Old ID" required>
+                    <label for="old_id">Old ID</label>
+
+                    <input type="radio" id="correction_of_entry" name="application_type" value="Correction of Entry" required>
+                    <label for="correction_of_entry">Correction of Entry</label>
+
+                    <input type="radio" id="college_of_law" name="application_type" value="College of Law" required>
+                    <label for="college_of_law">College of Law</label>
+
+                    <input type="radio" id="institute_of_technology" name="application_type" value="Institute of Technology" required>
+                    <label for="institute_of_technology">Institute of Technology</label>
+
+                </div>
+
+                
+            </div>
+
+            <h3>ID Information</h3>
+            
+                <div class="form-row">
+                    <label for="student_number">Student Number:</label>
+                    <input type="text" id="student_number" name="student_number" pattern="[A-Za-z0-9-]+" title="Only letters, numbers, and hyphen are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="middle_name">Middle Name:</label>
+                    <input type="text" id="middle_name" name="middle_name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="date_of_birth">Date of Birth (YYYY/MM/DD):</label>
+                    <input type="text" id="date_of_birth" name="date_of_birth" pattern="\d{4}/\d{2}/\d{2}" placeholder="YYYY/MM/DD" required>
+                </div>
+                <div class="form-row">
+                    <label for="college">College:</label>
+                    <select id="college" name="college" required>
+                        <option value="" disabled selected>Select your college</option>
+                        <option value="LHS">LHS</option>
+                        <option value="SHS">SHS</option>
+                        <option value="OUS">OUS</option>
+                        <option value="CAF">CAF</option>
+                        <option value="CADBE">CADBE</option>
+                        <option value="CAL">CAL</option>
+                        <option value="CBA">CBA</option>
+                        <option value="COC">COC</option>
+                        <option value="CCIS">CCIS</option>
+                        <option value="COED">COED</option>
+                        <option value="CE">CE</option>
+                        <option value="CHK">CHK</option>
+                        <option value="CL">CL</option>
+                        <option value="CPSPA">CPSPA</option>
+                        <option value="CSSD">CSSD</option>
+                        <option value="CS">CS</option>
+                        <option value="CTHTM">CTHTM</option>
+                        <option value="DCvET">DCvET</option>
+                        <option value="DCET">DCET</option>
+                        <option value="DEET">DEET</option>
+                        <option value="DECET">DECET</option>
+                        <option value="DICT">DICT</option>
+                        <option value="DMET">DMET</option>
+                        <option value="DOMT">DOMT</option>
+                        <option value="DRET">DRET</option>
+                    </select>
+                </div>                
+                <div class="form-row">
+                    <label for="course_year_sec">Course, Year & Section:</label>
+                    <input type="text" id="course_year_sec" name="course_year_sec" pattern="[A-Za-z0-9-]+" title="Only letters, numbers, and hyphen are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="home_address">Home Address:</label>
+                    <input type="text" id="home_address" name="home_address" pattern="[A-Za-z0-9,.\s#-]+" title="Only letters, numbers, comma and period are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="mobile_number">Mobile Number:</label>
+                    <input type="text" id="mobile_number" name="mobile_number" pattern="09[0-9]{9}" title="Mobile number must start with 09 and have a total of 11 digits" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <h4>In case of emergency, please notify:</h4>
+                <div class="form-row">
+                    <label for="complete_name">Complete Name:</label>
+                    <input type="text" id="complete_name" name="complete_name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="parent_mobile_number">Mobile Number:</label>
+                    <input type="text" id="parent_mobile_number" name="parent_mobile_number" pattern="09[0-9]{9}" title="Mobile number must start with 09 and have a total of 11 digits" required>
+                </div>
+                <div class="form-row">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" pattern="[A-Za-z0-9,.\s#-]+" title="Only letters, numbers, comma and period are allowed" required>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
